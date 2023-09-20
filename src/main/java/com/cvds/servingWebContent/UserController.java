@@ -22,7 +22,6 @@ public class UserController {
         RestTemplate restTemplate = new RestTemplate();
 
         User user = restTemplate.getForObject(uri, User.class);
-        System.out.println("User: " + user);
         Address address = user.getAddress();
         Geo geo = address.getGeo();
         Company company = user.getCompany();
@@ -35,4 +34,5 @@ public class UserController {
 
         return modelAndView;
     }
+
 }
