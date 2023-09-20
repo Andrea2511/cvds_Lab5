@@ -14,6 +14,24 @@
         </blockquote>
     </figure>
 
+    <label for="userIdInput">Ingrese un id del usuario:</label>
+    <input type="text" id="userIdInput" placeholder="Ingrese un número">
+    <button onclick="redirectToLink()">Ir a la página</button>
+    <script>
+        function redirectToLink() {
+            // Obtener el valor del número del cuadro de texto
+            var userInput = document.getElementById("userIdInput").value;
+
+            // Comprobar si el valor es un número válido
+            // Redireccionar a la página con el número en la URL
+            var link = "http://127.0.0.1:8080/user/" + userInput;
+            if (!isNaN(userInput) && userInput>0 &&  10>userInput) {
+                window.location.href = link;
+            } else {
+                alert("Por favor, ingrese un número válido.");
+            }
+        }
+    </script>
     <table class="table">
         <thead>
         <tr>
