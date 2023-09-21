@@ -11,7 +11,7 @@
 ### PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 - Revise el resultado obtenido
 
-     ![image](Recursos/301.png)
+     ![](/src/main/resources/img/301.png)
 
 
 - ¿Qué codigo de error sale?revise el significado del mismo en la lista de códigos de estado HTTP.
@@ -49,9 +49,9 @@
 - ¿Cuáles son las diferencias de "curl -v" y "curl -i" con los diferentes parámetros?
 Ambas sirven para realizar solicitudes http, por lo que vemos el curl -v habilita una información mas detallada nos muestra tanto la solicitud como las respuesta   y  la de  curl -i  solo nos muestra los encabezados de la respuesta http.
 
-     ![image](Recursos/curl.png)
+    ![](/src/main/resources/img/curl.png)
 
-### Parte II - Haciendo una aplicación dinámica usando el patron MVC:
+### PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
 
 ![](/src/main/resources/img/Home.png)
 ![](/src/main/resources/img/HelloName.png)
@@ -112,8 +112,20 @@ En la vista, ya que se im porta en el html para aplicar todos sus estilos
 ### PARTE IV. - APLICACIÓN MVC JUEGO
 
 
+![](/src/main/resources/img/inicio.png)
+![](/src/main/resources/img/ganaste.png)
+
+¿Qué pasa si abro el sitio de juegos en dos navegadores difententes?
+
+![](/src/main/resources/img/interferencia.png)
+
+- Intefieren entre si, cada jugador realiza un movimiento lo que hace que se descuadren los valores, lo que significa que solo existe una sesión del juego  accesible desde cualquier  ventada del navegador. 
+
+Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+
+- Crear una instacia  por cada pestaña o utilizar cuentas de usuario diferentes. 
+
 
 ### REFERENCIAS
-- parte 1
     - https://developer.mozilla.org/es/docs/Web/HTTP/Methods
     - https://developer.mozilla.org/es/docs/Web/HTTP/Status 
