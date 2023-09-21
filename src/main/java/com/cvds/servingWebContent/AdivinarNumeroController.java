@@ -40,7 +40,7 @@ public class AdivinarNumeroController {
                  model.addAttribute("message", "¡Felicidades! nos debes  $" + guessNumber.getPrize()+ " D:");
             }else {
                 guessNumber.reducePrize();
-                model.addAttribute("message", "¡Mala suerte! tu premio actual es de $" + guessNumber.getPrize());
+                model.addAttribute("message", "¡Sigue intentando! tu premio actual es de $" + guessNumber.getPrize());
             }
         }
 
