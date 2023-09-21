@@ -23,7 +23,6 @@ public class UserController {
         model.addAttribute("name", name);
         return "greeting";
     }
-   
 
     @RequestMapping("/user/{id}")
     private ModelAndView getUser(@PathVariable Integer id, Model model) {
